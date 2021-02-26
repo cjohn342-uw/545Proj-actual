@@ -17,6 +17,13 @@
             <br />
             <br />
             Search Pets<br />
+            <asp:TextBox ID="selectPetType" runat="server">Pet Type (dog, cat, etc)</asp:TextBox>
+            <asp:TextBox ID="selectPetBreed" runat="server">Pet Breed</asp:TextBox>
+            <br />
+            <asp:Button ID="SelectPet" runat="server" OnClick="SelectPet_Click" Text="Find your new friend!" />
+            <br />
+            <asp:Label ID="changeMe" runat="server" Text="Pet ID, Pet Name, Pet Type, Pet Breed, Birthday, Description"></asp:Label>
+            <br />
         </div>
     </form>
 </body>
