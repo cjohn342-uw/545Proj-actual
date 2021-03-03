@@ -131,7 +131,7 @@ namespace _545Proj
                 }
                 if (updateProdQuantity.Text != "Product Quantity")
                 {
-                    SqlCommand uProdQuantity = new SqlCommand("EXEC dbo.updateProductPrice @sku, @quantity", proj);
+                    SqlCommand uProdQuantity = new SqlCommand("EXEC dbo.updateProductQuantity @sku, @quantity", proj);
                     uProdQuantity.Parameters.AddWithValue("@sku", sku.Text);
                     uProdQuantity.Parameters.AddWithValue("@quantity", updateProdQuantity.Text);
                     proj.Open();
